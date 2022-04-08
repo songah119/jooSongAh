@@ -73,23 +73,28 @@ section.burger{
 }
 
 article.burger-card {
+  width: 45%;
+  height:150px;
   display: flex;
   background-color: white;
   border: 1px solid grey;
   border-radius: 8px;
-  width: 45%;
-  height:150px;
   justify-content: center;
   align-items:center;
   box-shadow: 3px 3px 3px grey;
-  
 }
+article.burger-card:hover{
+  background-color: rgb(240, 210, 13);
+}
+
 .burger-name{
   font-size: large;
 }
+
 .burger-content{
   width: 50%;
 }
+
 article.burger-card > img{
   width: 150px;
 }
@@ -142,4 +147,27 @@ footer{
 footer > p{
   color:white;
   font-size: 20px;
+}
+
+@media (max-width: 1200px){
+  aside.sidebar {
+    display:flex;
+    background-color: transparent;
+  }
+  h2.sidebar__option-title{
+    display:none;
+  }
+  ul.sidebar__option{
+    position:absolute;
+    top: 40px;
+    margin-left: 100px;
+  }
+  aside.sidebar{flex: 0;}
+  section.burger{flex: 5;}
+  section.cart-card{flex: 2;}
+}
+@media (max-width: 900px) {
+  article.burger-card {
+    width: 100%;
+  }
 }
