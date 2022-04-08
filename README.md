@@ -2,6 +2,6 @@
 
 |주차|과제 내용|🔗 링크|
 |------|---|---|
-|1주차|햄식이를 도와줄람줄|[링크](https://github.com/THE-SOPT-WEB/jooSongAh/pull/1)|
+|1주차|햄식이를 도와조~!|[링크](https://github.com/THE-SOPT-WEB/jooSongAh/pull/1)|
 
 
