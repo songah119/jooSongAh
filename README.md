@@ -4,6 +4,6 @@
 |------|---|---|
 |1주차|햄식이를 도와조~!|[링크](https://github.com/THE-SOPT-WEB/jooSongAh/pull/1)|
 |2주차-1|누구...세요..?|[링크](https://github.com/THE-SOPT-WEB/jooSongAh/pull/1)|
-|2주차-2|햄식이 발전!|[링크](https://github.com/THE-SOPT-WEB/jooSongAh/pull/1)|
+|2주차-2|햄식이 발전!|[링크](https://github.com/THE-SOPT-WEB/jooSongAh/pull/3)|
 
 
