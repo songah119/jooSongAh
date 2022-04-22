@@ -40,7 +40,7 @@ function calcTotalPrice(cartList){ //calculate totalPrice
     $('p.total-price').innerText = totalPrice.toLocaleString();
 }
 
-function burgerExsist(cartList,burgerName){
+function burgerExsist(cartList,burgerName){ //checking the burger is already in cartList 
     const cartListChild=cartList.childNodes;
     let bool=false;
     cartListChild.forEach((cartClassList)=>{
@@ -73,8 +73,9 @@ function attachEvent({cartList,burgerCardList,orderBtn,cancelBtn}){
 }
 
 function cancelBurger(cartList){ //cancel initializing totalPrice, burgerlist
-    Array.from(cartList.children).forEach((list) => {
-        list.remove();
+    const cartListChild=cartList.childNodes;
+    cartListChild.forEach((cartClassList)=>{
+        cartList.remove(cartClassList);
     });
     calcTotalPrice(cartList);
 }
