@@ -47,7 +47,7 @@ function burgerExsist(cartList,burgerName){ //checking the burger is already in 
         if(burgerName === cartClassList.querySelector('.cart__list--burger-name').innerText) bool=true;
     });
     return bool;
-    
+
 }
 
 function attachEvent({cartList,burgerCardList,orderBtn,cancelBtn}){
@@ -73,9 +73,8 @@ function attachEvent({cartList,burgerCardList,orderBtn,cancelBtn}){
 }
 
 function cancelBurger(cartList){ //cancel initializing totalPrice, burgerlist
-    const cartListChild=cartList.childNodes;
-    cartListChild.forEach((cartClassList)=>{
-        cartList.remove(cartClassList);
+    Array.from(cartList.children).forEach((list) => {
+        list.remove();
     });
     calcTotalPrice(cartList);
 }
@@ -103,4 +102,4 @@ window.onload =()=>{ //onload
         orderBtn: $('button.cart-btn--order'),
         cancelBtn: $('button.cart-btn--cancel'),
     });
-};
+}; 
