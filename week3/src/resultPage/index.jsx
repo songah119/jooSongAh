@@ -9,7 +9,7 @@ function ResultPage({winner}) {
                 <h1>카페 최강자는?</h1>
             </header>
             <main className="result-page--main">
-                <section className="img--wrapper">
+                <section className="img--wrapper" >
                     <img className="crown-img" src="./assets/crown.png" alt="crown"/>
                     <img className="winner-img" src={winner[0].img}/>
                 </section>
