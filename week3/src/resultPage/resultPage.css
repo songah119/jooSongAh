@@ -23,6 +23,7 @@
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-delay: 0.5s;
+    display:flex;
 }
 
 .winnerImg{
