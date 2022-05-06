@@ -48,7 +48,7 @@ function GamePage(){
             <header className="header">
                 <h1>당신의 최애 카페를 골라주세요!</h1>
             </header>
-            <main>
+            <main className="game-page--main">
                 <section className="content-wrapper">
                     {IsOver && <ResultPage winner={matchWinners.current}/>}
                     {!IsOver && <img className="versus-img" src="./assets/vs.png" alt="versus"/>}

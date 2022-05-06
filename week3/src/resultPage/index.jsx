@@ -8,16 +8,16 @@ function ResultPage({winner}) {
             <header>
                 <h1>카페 최강자는?</h1>
             </header>
-            <main>
-                <div className="result-page--wrapper">
+            <main className="result-page--main">
+                <section className="img--wrapper">
                     <img className="crown-img" src="./assets/crown.png" alt="crown"/>
                     <img className="winner-img" src={winner[0].img}/>
-                </div>
-                <section className="button-wrapper">
+                </section>
+                <section className="button--wrapper">
                 <Link className="replay-game--link linkStyle" to={"/"}>
                     <button className="replay-button">처음으로</button>
-                    <button className="cancel-button">공유하기</button>
                 </Link>
+                <button className="cancel-button">공유하기</button>
                 </section>
             </main>
         </div>
