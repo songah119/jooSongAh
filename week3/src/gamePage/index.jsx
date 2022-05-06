@@ -44,21 +44,21 @@ function GamePage(){
 
 
     return(
-        <div id="gamePage">
+        <div id="game-page">
             <header className="header">
                 <h1>당신의 최애 카페를 골라주세요!</h1>
             </header>
             <main>
-                <section className="contentWrapper">
+                <section className="content-wrapper">
                     {IsOver && <ResultPage winner={matchWinners.current}/>}
-                    {!IsOver && <img className="versusImg hide" src="./assets/vs.png" alt="versus"/>}
+                    {!IsOver && <img className="versus-img" src="./assets/vs.png" alt="versus"/>}
                     {!IsOver && gameInfo.map((content, idx)=>{
                         if (idx >= 2) return null;
                         const{img,name}=content;
                         return(
                             <div className="content" onClick={() => 이긴놈찾기(content)} key={content.name}>
-                                <img className="contentImg" src={img}/>
-                                <p className="contentName">{name}</p>
+                                <img className="content-img" src={img}/>
+                                <p className="content-name">{name}</p>
                             </div>
                         );
                     })}

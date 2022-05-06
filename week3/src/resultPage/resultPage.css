@@ -1,17 +1,8 @@
-.resultPageMain{
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin:0px;
-}
-
 .result-page--wrapper{
     position: relative;
 }
 
-.crownImg{
+.crown-img{
     height:100px;
     margin:0px;
     padding:0px;
@@ -26,7 +17,7 @@
     display:flex;
 }
 
-.winnerImg{
+.winner-img{
     height: 400px;
     margin: 20px;
 }
@@ -36,12 +27,12 @@
     color: inherit;
 }
 
-.buttonWrapper{
+.button-wrapper{
     display: flex;
     flex-direction: row;
 }
 
-.replayButton{
+.replay-button{
     font-family: 'Jua', sans-serif;
     justify-content: center;
     background-color: whitesmoke;
@@ -55,7 +46,7 @@
     cursor: pointer;
 }
 
-.cancelButton{
+.cancel-button{
     font-family: 'Jua', sans-serif;
     justify-content: center;
     background-color: whitesmoke;
@@ -69,7 +60,7 @@
     cursor: pointer;
 }
 
-.cancelButton:hover , .replayButton:hover{
+.cancel-button:hover , .replay-button:hover{
     box-shadow:200px 0 0 0 rgba(0,0,0,0.5) inset;
 }
 
