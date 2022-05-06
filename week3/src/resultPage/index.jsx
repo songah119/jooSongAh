@@ -4,22 +4,22 @@ import { Link } from "react-router-dom";
 
 function ResultPage({winner}) {
     return ( 
-        <div id="ResultPage">
-            <header className="resultPageHeader">
+        <div id="result-page">
+            <header>
                 <h1>카페 최강자는?</h1>
             </header>
-            <div className="resultPageMain">
+            <main>
                 <div className="result-page--wrapper">
-                    <img className="crownImg" src="./assets/crown.png" alt="crown"/>
-                    <img className="winnerImg" src={winner[0].img}/>
+                    <img className="crown-img" src="./assets/crown.png" alt="crown"/>
+                    <img className="winner-img" src={winner[0].img}/>
                 </div>
-                <section className="buttonWrapper">
-                <Link className="replayGameLink linkStyle" to={"/"}>
-                    <button className="replayButton">처음으로</button>
-                    <button className="cancelButton">공유하기</button>
+                <section className="button-wrapper">
+                <Link className="replay-game--link linkStyle" to={"/"}>
+                    <button className="replay-button">처음으로</button>
+                    <button className="cancel-button">공유하기</button>
                 </Link>
                 </section>
-            </div>
+            </main>
         </div>
     );
 }

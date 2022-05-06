@@ -6,14 +6,14 @@ body{
     background-color: black;
 }
 
-#startPage .header{
+#start-page .header{
     display: flex;
     justify-content: center;
     background-color: black;
     color:whitesmoke;
 }
 
-#startPage main{
+#start-page main{
     height:500px;
     background-color: black;
     display: flex;
@@ -24,7 +24,7 @@ body{
     padding-block-end: 50px;
 }
 
-.startPageImg{
+.start-page--img{
     height: 100%;
     padding-bottom: 20px;
 }
@@ -34,7 +34,7 @@ body{
     color: inherit;
 }
 
-.startButton{
+.start-game--button{
     font-family: 'Jua', sans-serif;
     justify-content: center;
     background-color: whitesmoke;
@@ -49,7 +49,7 @@ body{
 
 }
 
-.startButton:hover{
+.start-game--button:hover{
     box-shadow:200px 0 0 0 rgba(0,0,0,0.5) inset;
 }
 
